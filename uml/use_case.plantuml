@@ -1,0 +1,25 @@
+@startuml
+skinparam packageStyle rectangle
+left to right direction
+
+actor user
+actor admin
+:advanced user: as pro
+pro --|> user
+admin --|> user
+
+rectangle healing-db {
+  user --> (Heilung mit einer Erkrankung verknuepfen)
+  user --> (Freitext zu einer Heilung oder einer Erkrankung eingeben)
+  user --> (Freitext diskutieren)
+
+  pro --> (Verknuepfung bestaetigen)
+
+  (Verknuepfung bestaetigen) ..> (user aufwehrten) : include
+  (Verknuepfung bestaetigen) ..> (verknuepfung aufwehrten) : include
+
+  admin --> (inhalte sperren)
+  admin --> (user sperren)
+  (user sperren) --> user
+}
+@enduml
