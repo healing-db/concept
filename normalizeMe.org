@@ -1,0 +1,3 @@
+| sickness                       | cure          |
+|--------------------------------+---------------|
+| Diarrhö / Diarrhoe (Durchfall) | Aloe d6 / d12 |
