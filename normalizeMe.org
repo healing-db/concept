@@ -1,3 +1,4 @@
-| sickness                       | cure          |
-|--------------------------------+---------------|
-| Diarrhö / Diarrhoe (Durchfall) | Aloe d6 / d12 |
+| sickness                       | cure                     |
+|--------------------------------+--------------------------|
+| Diarrhö / Diarrhoe (Durchfall) | Aloe d6 / d12            |
+| Diarrhö / Diarrhoe (Durchfall) | fenchel anis kuemmel tee |
