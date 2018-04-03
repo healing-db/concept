@@ -18,8 +18,17 @@ rectangle healing-db {
   (Verknuepfung bestaetigen) ..> (user aufwehrten) : include
   (Verknuepfung bestaetigen) ..> (verknuepfung aufwehrten) : include
 
-  admin --> (inhalte sperren)
-  admin --> (user sperren)
+  usecase UC1 as "inhalte sperren
+  --
+  troll"
+
+  note right of (UC1)
+    condition:(Wenn user mehrfach falsche inhalte einstellt)
+    extension point: troll
+  end note
+
+  admin --> (UC1)
+  (user sperren) .> (UC1) : extends
   (user sperren) --> user
 }
 @enduml
